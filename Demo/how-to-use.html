@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="mootools-1.2.4-core-nc.js"></script>
+<script type="text/javascript" src="color-picker.js"></script>
+<script type="text/javascript">
+window.addEvent('domready', function(){
+		var colorInput = document.id('cpicker');
+		var cpicker = new ColorPicker(colorInput,{cellWidth: 8, cellHeight: 12})
+		});
+		</script>
+</head>
+
+<body style="background-color:#69F">
+<div style="background-color:#FFF; padding:10px;margin-top:40px; margin-left:auto; margin-right:auto; width:300px; height:80px;text-align:center">
+<form action="">
+<label for="cpicker" style="float:left;">Pick a colour</label><input type="text" size="8" name="cpicker" id="cpicker" style="float:left; margin-left:10px"/>
+</form>
+</div>
+<div style="background-color:#FFF; padding:10px;margin-top:60px; margin-left:auto; margin-right:auto; width:600px; height:300px; text-align:left">
+  <p><br />
+    How to use<br />
+    ----------<br />
+    The script requires a form field element, pass this to the color picker script along with the options, eg assuming your form field has the id cpicker:-</p>
+  <p> window.addEvent('domready', function(){<br />
+    var colorInput = document.id('cpicker');<br />
+  <br />
+    var cpicker = new ColorPicker(colorInput,{cellWidth: 8, cellHeight: 12})<br />
+    });<br />
+  </p>
+</div>
+</body>
+</html>
